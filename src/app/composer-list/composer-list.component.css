@@ -1,0 +1,16 @@
+/*
+Title: composer.component.css
+ Author: Professor Krasso
+ Modified By: April Yang
+ Date: 11/10/2022
+ Description: Assignment 4.4 - Async Pipe
+ */
+
+
+
+.txtSearch {
+  width: 30%;
+  float: right;
+  margin-bottom: 5px;
+}
+

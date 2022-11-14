@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/**
+ * Title: styles.css
+ * Author: Professor Krasso
+ * Modified By: April Yang
+ * Date: 11/10/2022
+ * Description: Global css style file
+ */
+
+ /* import bootstrap-icons */
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons';
+
+/* https://www.techiediaries.com/angular-bootstrap/ */
+@import "~bootstrap/dist/css/bootstrap.css";
+

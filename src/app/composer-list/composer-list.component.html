@@ -1,0 +1,50 @@
+<!--
+ Title: composer-list.component.html
+ Author: Professor Krasso
+ Modified By: April Yang
+ Date: 11/10/2022
+ Description: Assignment 4.4 - Async Pipe
+-->
+
+<div class="row">
+  <div class="col-sm-12">
+    <!-- search bar -->
+    <div class="txtSearch">
+      <input
+        type="text"
+        id="txtSearch"
+        class="form-control"
+        [formControl]="txtSearchControl"
+        placeholder="Search by name"
+      />
+    </div>
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" style="background-color: black; color: white">
+            Composer ID
+          </th>
+          <th scope="col" style="background-color: black; color: white">
+            Full name
+          </th>
+          <th scope="col" style="background-color: black; color: white">
+            Genre
+          </th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let composer of composers | async">
+        <tr>
+          <td scope="row">
+            <!-- for loop id on link -->
+            <!-- data display composer id in html -->
+            <a routerLink="/composer-details/{{ composer.composerId }}">
+              {{ composer.composerId }}
+            </a>
+          </td>
+          <td scope="row">{{ composer.fullName }}</td>
+          <td scope="row">{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
